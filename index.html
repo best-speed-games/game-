@@ -8,6 +8,7 @@
         h4 {text-align: center; direction: ltr;}
         body{background-color: rgb(252, 255, 221);} 
        .d {
+        transition: 0.4s;
         width: 30px;
         font-size: 10px;
         padding: 50px 20px 50px 20px;
@@ -21,13 +22,22 @@
         background-color: rgb(43, 43, 43); 
         cursor: pointer;
         padding: 50px 20px 50px 20px;
+        transform: translateY(-5px);
+       }
+       a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.7s;
+       }
+       a:hover {
+        color: grey;
+        text-decoration: underline;
        }
      </style>
 </head>
 <body>
     <div>
-    <h4 class="d">click</h4>
-    </div>
+    <h4 class="d">Here</h4>
     <a 
     class="s" href="https://www.youtube.com"
     target="_blank" 
@@ -52,16 +62,16 @@
      rel="noopener noreferrer"
      >google</a>
     <br>
-    <iframe 
-      width="560" height="315"
-      src="https://www.youtube.com/embed/d7XXnaEFBmw?si=vFt3R6XoJKD6A183modestbranding=1rel=0mute=1"
-      title="YouTube video player" 
-      frameborder="0"
+    </div>
+    <iframe
+     width="560" height="315" 
+     src="https://www.youtube.com/embed/x-Ia1yfdLbo?si=GEFz3jpwmuI9H2Dt" 
+     title="YouTube video player" 
+     frameborder="0" 
      allow="accelerometer; autoplay; 
-     clipboard-write; encrypted-media;
-      gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin"
-       allowfullscreen>
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" 
+     allowfullscreen>
     </iframe>
 </body>
 </html>
