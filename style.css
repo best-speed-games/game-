@@ -37,11 +37,37 @@ body {
         font-size: 16px;
        }
        .nb a:hover {
-        color: gray;
+        color: rgba(0, 110, 255, 0.777);
         text-decoration: underline;
        }
        img {
         width: 300px;
         height: auto;
         border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
        }
+       img:hover {
+        transform: scale(1.1);
+        transform: translateY(-10px);
+        box-shadow: 0px 15px 30px black;
+       }
+       .settings-btn {
+    position: fixed;   /* تجعل الزر يطفو فوق المحتوى ولا يتحرك */
+    top: 20px;         /* المسافة من الأعلى */
+    left: 20px;       /* المسافة من اليمين (غيرها لـ left إذا أردته يساراً) */
+    
+    background-color: #2b2b2b; /* لون خلفية مثل الـ nav الخاص بك */
+    padding: 10px;
+    border-radius: 50%;        /* يجعله دائرياً */
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* الظل الواقعي */
+    transition: 0.3s;
+    z-index: 1000;             /* لضمان ظهوره فوق كل عناصر الصفحة */
+}
+
+.settings-btn:hover {
+    transform: rotate(90deg) scale(1.1); /* يدور الزر ويكبر قليلاً عند لمسه */
+    background-color: #444;
+}
