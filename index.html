@@ -5,7 +5,11 @@
     <meta name="description" content="اول كود">
     <meta name="keywords" content="محمد">
     <style>
-        h4 {text-align: center; direction: ltr;}
+       body {
+        margin: 0;
+        padding: 0;
+       }
+       h4 {text-align: center; direction: ltr;}
         body{background-color: rgb(252, 255, 221);} 
        .d {
         transition: 0.4s;
@@ -24,45 +28,51 @@
         padding: 50px 20px 50px 20px;
         transform: translateY(-5px);
        }
-       a {
-        text-decoration: none;
-        color: black;
-        transition: color 0.7s;
+       .nb {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;    
        }
-       a:hover {
-        color: grey;
+       .nb a {
+        text-decoration: none;
+        color: white;
+        transition: 0.4;
+        font-size: 16px;
+       }
+       .nb a:hover {
+        color: gray;
         text-decoration: underline;
        }
      </style>
 </head>
 <body>
-    <div>
-    <h4 class="d">Here</h4>
+    <nav class="nb">
     <a 
     class="s" href="https://www.youtube.com"
     target="_blank" 
     rel="noopener noreferrer"
     >youtube</a>
-    <br>
     <a
      class="sb" href="https://www.instagram.com"
      target="_blank"
      rel="noopener noreferrer"
      >instagram</a>
-    <br>
     <a
      class="sbs" href="https://www.tiktok.com"
      target="_blank"
      rel="noopener noreferrer"
      >tiktok</a>
-    <br>
     <a
      class="sbss" href="https://www.google.com"
      target="_blank"
      rel="noopener noreferrer"
      >google</a>
-    <br>
-    </div>
+    </nav>
+    <h4 class="d">Here</h4>
     <iframe
      width="560" height="315" 
      src="https://www.youtube.com/embed/x-Ia1yfdLbo?si=GEFz3jpwmuI9H2Dt" 
