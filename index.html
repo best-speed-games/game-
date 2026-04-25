@@ -89,5 +89,12 @@
      allowfullscreen>
     </iframe>
     <img src="IMG_4865.jpg" alt="صوره">
+    <script>
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+    }, false);
+    </script>
 </body>
 </html>
